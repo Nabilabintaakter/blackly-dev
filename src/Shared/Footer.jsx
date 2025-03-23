@@ -19,7 +19,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links & Services */}
-          <div className="w-full md:w-1/3 flex justify-between">
+          <div className="w-full md:w-1/3 flex justify-around md:justify-between">
             <div>
               <h3 className="text-lg font-semibold mb-4 text-gray-100">Quick Links</h3>
               <ul className="space-y-2">
@@ -83,7 +83,7 @@ const Footer = () => {
           </div>
 
           {/* Contact & Social Icons */}
-          <div className="w-fit">
+          <div className="w-fit mx-auto">
             <h3 className="text-lg font-semibold mb-4 text-gray-100">Contact Us</h3>
             <p className="text-gray-400 text-sm">Email: support@blackly.dev</p>
             <p className="text-gray-400 text-sm">Phone: +123 456 7890</p>
