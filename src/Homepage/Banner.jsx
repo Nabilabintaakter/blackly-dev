@@ -1,7 +1,9 @@
 import image1 from "../assets/websd.jpg";
 import image2 from "../assets/image2.jpg";
 import Container from "../Shared/Container";
-
+import { Link } from "react-scroll";
+import { BsFillPlayFill } from "react-icons/bs";
+import { FaArrowRight } from "react-icons/fa";
 const Banner = () => {
   return (
     <div id="home" className="bg-[#111722] relative">
@@ -13,24 +15,28 @@ const Banner = () => {
             <div className='bg-[#3a435e7e] px-4 rounded-full flex items-center w-fit mb-4 p-2'>
               <div className="h-2 w-2 bg-blue-600 rounded-full mr-2 animate-ping"></div>
               <h3 className="font-bold text-[10px] md:text-sm text-white">
-              Building Success with Web, App & Digital Marketing!
+                Building Success with Web, App & Digital Marketing!
               </h3>
             </div>
             <h1 className="w-[96%] text-white text-4xl lg:text-5xl font-bold leading-tight">
-            Empowering Your Vision with  <span className=" text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-blue-400 to-blue-300 mb-3 drop-shadow-[0_0_10px_rgba(59,130,246,0.3)] ">
-            Cutting-Edge Digital Solutions
+              Empowering Your Vision with  <span className=" text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-blue-400 to-blue-300 mb-3 drop-shadow-[0_0_10px_rgba(59,130,246,0.3)] ">
+                Cutting-Edge Digital Solutions
               </span>
             </h1>
-            <p className="lg:text-lg text-gray-300 md:mt-4 mt-10">
+            <p className="lg:text-lg text-gray-300 md:mt-4 mt-7">
               Handcrafted solutions to accelerate your business growth. From startups to enterprises, we deliver innovative, fast, and high-quality applications that bring your vision to life. Our affordable web and mobile services ensure fast delivery without compromising quality.
             </p>
-            <div className="mt-10 md:mt-6 flex justify-center md:justify-start gap-4">
-              <button className="px-6 py-3 bg-blue-800 text-white font-semibold rounded-lg hover:bg-blue-900 transition">
-                Get Started ➜
-              </button>
-              <button className="px-6 py-3 border border-gray-500 text-gray-300 rounded-lg hover:border-white hover:text-white transition">
-                How It Works
-              </button>
+            <div className="mt-7 md:mt-6 flex justify-start gap-4">
+              <Link to="services"
+                smooth={true}
+                duration={500} className="px-4 py-2 md:px-6 md:py-3 bg-blue-800 text-white font-semibold rounded-lg hover:bg-blue-900 transition cursor-pointer flex items-center gap-2">
+                Get Started <FaArrowRight />
+              </Link>
+              <Link to="whyUs"
+                smooth={true}
+                duration={500} className="px-4 py-2 md:px-6 md:py-3 border border-gray-500 text-gray-300 rounded-lg hover:border-white hover:text-white transition cursor-pointer flex items-center gap-1">
+                <BsFillPlayFill /> How It Works 
+              </Link>
             </div>
           </div>
 

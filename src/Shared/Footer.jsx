@@ -35,22 +35,27 @@ const Footer = () => {
                     to="home"
                     smooth={true}
                     duration={500}
-                    className="hover:text-blue-500 hover:font-bold text-gray-400 transition-all duration-500"
+                    className="hover:text-blue-500 hover:font-bold text-gray-400 transition-all duration-500 cursor-pointer"
                   >
                     Home
                   </Link>
                 </li>
                 <li>
-                  <a href="/services" className="hover:text-blue-500 hover:font-bold text-gray-400 transition-all duration-500">
+                <Link
+                    to="services"
+                    smooth={true}
+                    duration={500}
+                    className="hover:text-blue-500 hover:font-bold text-gray-400 transition-all duration-500 cursor-pointer"
+                  >
                     Services
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <Link
                     to="whyUs"
                     smooth={true}
                     duration={500}
-                    className="hover:text-blue-500 hover:font-bold text-gray-400 transition-all duration-500"
+                    className="hover:text-blue-500 hover:font-bold text-gray-400 transition-all duration-500 cursor-pointer"
                   >
                     About
                   </Link>
@@ -60,7 +65,7 @@ const Footer = () => {
                     to="offers"
                     smooth={true}
                     duration={500}
-                    className="hover:text-blue-500 hover:font-bold text-gray-400 transition-all duration-500"
+                    className="hover:text-blue-500 hover:font-bold text-gray-400 transition-all duration-500 cursor-pointer"
                   >
                     Offers
                   </Link>
@@ -68,7 +73,7 @@ const Footer = () => {
                 <li>
                   <a href="https://wa.me/8801622559988"
                     target="_blank"
-                    rel="noopener noreferrer" className="hover:text-blue-500 hover:font-bold text-gray-400 transition-all duration-500">
+                    rel="noopener noreferrer" className="hover:text-blue-500 hover:font-bold text-gray-400 transition-all duration-500 cursor-pointer">
                     Contact
                   </a>
                 </li>

@@ -80,7 +80,7 @@ const Navbar = () => {
               smooth={true}
               duration={500}
             >
-              <div className='flex gap-2 items-center'>
+              <div className='flex gap-2 items-center cursor-pointer'>
                 <div className='w-9 md:w-12'>
                   <img className='w-full' src={logo} alt="" />
                 </div>
