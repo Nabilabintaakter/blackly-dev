@@ -1,5 +1,5 @@
-import image1 from "../assets/websd.jpg"; // Replace with your actual image path
-import image2 from "../assets/image2.jpg"; // Replace with your actual image path
+import image1 from "../assets/websd.jpg"; 
+import image2 from "../assets/image2.jpg"; 
 import Container from "../Shared/Container";
 
 const Banner = () => {
