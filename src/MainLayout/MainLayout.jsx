@@ -5,12 +5,12 @@ import { Outlet } from 'react-router-dom';
 
 const MainLayout = () => {
     return (
-        <div className=''>
-            <div className='h-[65px]'>
-                <Navbar></Navbar>
-                <Outlet></Outlet>
-                <Footer></Footer>
+        <div className="font-montserrat">
+            <Navbar />
+            <div className="min-h-screen">
+                <Outlet /> 
             </div>
+            <Footer />
         </div>
     );
 };

@@ -4,15 +4,15 @@ import { FaTrophy, FaRocket, FaHandsHelping, FaCogs, FaUsers, FaRegCheckCircle }
 
 const WhyChooseUs = () => {
     return (
-        <div className="bg-[#111722] pt-12 pb-16 lg:pt-16 lg:pb-20 relative">
+        <div id='whyUs' className="bg-[#111722] pt-12 pb-16 lg:pt-16 lg:pb-20 relative">
              <div className="absolute inset-0 bg-gradient-to-b from-[#111722] via-[#132038] to-[#090F1B] opacity-60 z-0"></div>
             <Container>
-                <div className=''>
-                    <div className="text-center mb-12 w-[95%] lg:w-[60%] mx-auto">
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-blue-400 to-blue-300 mb-3 w-[95%] drop-shadow-[0_0_10px_rgba(59,130,246,0.3)]">
-                            Why Choose Us
+                <div>
+                <div className="text-center mb-12 w-[95%] lg:w-[60%] mx-auto">
+                    <h2 className="text-4xl lg:text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-blue-400 to-blue-300 mb-5 w-[95%] drop-shadow-[0_0_10px_rgba(59,130,246,0.3)]">
+                    Why Choose Us
                         </h2>
-                        <p className="text-white">We blend creativity, cutting-edge technology, and result-driven strategies to propel your business forward. Our commitment to excellence ensures innovative solutions that drive growth, engagement, and long-term success.</p>
+                        <p className="text-white ">We blend creativity, cutting-edge technology, and result-driven strategies to propel your business forward. Our commitment to excellence ensures innovative solutions that drive growth, engagement, and long-term success.</p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
                         {/* Card 1 */}
@@ -65,7 +65,7 @@ const WhyChooseUs = () => {
                             </div>
                             <h3 className="text-xl lg:text-2xl font-semibold text-white group-hover:text-purple-400 mb-4 text-center transition-all duration-500">Client-Centric Approach</h3>
                             <p className="text-gray-300 text-center">
-                                WWe prioritize clear communication, keeping you informed at all times. Our support team is always available, and we offer flexible service models tailored to ensure smooth, successful collaboration.
+                                We prioritize clear communication, keeping you informed at all times. Our support team is always available, and we offer flexible service models tailored to ensure smooth, successful collaboration.
                             </p>
                         </div>
 

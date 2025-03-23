@@ -8,21 +8,21 @@ import Container from '@/Shared/Container';
 
 const OffersSection = () => {
     return (
-        <div className="bg-[#111722] py-8">
+        <div id='offers' className="bg-[#111722] py-8">
             <Container>
                 <div>
                     <div className="text-center mb-12 w-[95%] lg:w-[60%] mx-auto">
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-blue-400 to-blue-300 mb-3 w-[95%] drop-shadow-[0_0_10px_rgba(59,130,246,0.3)]">
+                    <h2 className="text-4xl lg:text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-blue-400 to-blue-300 mb-5 w-[95%] drop-shadow-[0_0_10px_rgba(59,130,246,0.3)]">
                     Unlock Exclusive Deals & Special Offers
                         </h2>
-                        <p className="text-gray-400 ">Unlock expert-driven services tailored for your success—whether it's building powerful apps, crafting dynamic websites, or executing strategic marketing campaigns, we deliver excellence in every aspect.</p>
+                        <p className="text-gray-300 ">Unlock expert-driven services tailored for your success—whether it's building powerful apps, crafting dynamic websites, or executing strategic marketing campaigns, we deliver excellence in every aspect.</p>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
 
                         {/* Development & Publishing Card */}
-                        <div className="bg-[#090F1B] rounded-lg p-6 border-[1px] border-[#202b41] hover:shadow-lg transition-all duration-500 transform hover:scale-105 flex flex-col justify-between">
-                            <div className='w-full mb-6'>
-                                <img className='w-full object-cover rounded-md' src={development} alt="" />
+                        <div className="bg-[#090F1B] rounded-lg p-6 border-[1px] border-[#202b41] hover:shadow-lg transition-all duration-500 transform hover:scale-102 flex flex-col justify-between">
+                            <div className='w-full mb-6 '>
+                                <img className='w-full  object-cover rounded-md' src={development} alt="" />
                             </div>
                             <div className='flex flex-col'>
                                 <div className='bg-[#121926] rounded-full flex justify-center items-center mb-4 p-2'>
@@ -58,7 +58,7 @@ const OffersSection = () => {
                         </div>
 
                         {/* Marketing & Promotion Card */}
-                        <div className="bg-[#090F1B] rounded-lg p-6 border-[1px] border-[#202b41] hover:shadow-lg transition-all duration-500 transform hover:scale-105 flex flex-col justify-between">
+                        <div className="bg-[#090F1B] rounded-lg p-6 border-[1px] border-[#202b41] hover:shadow-lg transition-all duration-500 transform hover:scale-102 flex flex-col justify-between">
                             <div className='w-full mb-6'>
                                 <img className='w-full object-cover rounded-md' src={marketing} alt="" />
                             </div>
@@ -93,7 +93,7 @@ const OffersSection = () => {
                         </div>
 
                         {/* Testing & Console Services Card */}
-                        <div className="bg-[#090F1B] rounded-lg p-6 border-[1px] border-[#202b41] hover:shadow-lg transition-all duration-500 transform hover:scale-105 flex flex-col justify-between">
+                        <div className="bg-[#090F1B] rounded-lg p-6 border-[1px] border-[#202b41] hover:shadow-lg transition-all duration-500 transform hover:scale-102 flex flex-col justify-between">
                             <div className='w-full mb-6'>
                                 <img className='w-full object-cover rounded-md' src={testing} alt="" />
                             </div>
@@ -128,7 +128,7 @@ const OffersSection = () => {
                         </div>
 
                         {/* Consulting & Strategy Card */}
-                        <div className="bg-[#090F1B] rounded-lg p-6 border-[1px] border-[#202b41] hover:shadow-lg transition-all duration-500 transform hover:scale-105 flex flex-col justify-between">
+                        <div className="bg-[#090F1B] rounded-lg p-6 border-[1px] border-[#202b41] hover:shadow-lg transition-all duration-500 transform hover:scale-102 flex flex-col justify-between">
                             <div className='w-full mb-6'>
                                 <img className='w-full object-cover rounded-md' src={consulting} alt="" />
                             </div>
