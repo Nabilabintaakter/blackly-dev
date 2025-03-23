@@ -34,9 +34,7 @@ const ServicesSection = () => {
             features: [
                 'Custom Website Design',
                 'Responsive Layouts',
-                'SEO Optimization',
-                'Content Management Systems (CMS)',
-                'E-Commerce Integration'
+                'SEO Optimization'
             ],
             benefits: [
                 'Improved Online Presence',
@@ -54,9 +52,7 @@ const ServicesSection = () => {
             features: [
                 'Custom Mobile App Design',
                 'Cross-Platform Compatibility (iOS & Android)',
-                'Push Notifications Integration',
-                'API Integrations',
-                'Real-Time Analytics'
+                'Push Notifications Integration'
             ],
             benefits: [
                 'Improved Customer Engagement',
@@ -74,9 +70,7 @@ const ServicesSection = () => {
             features: [
                 'App Store & Play Store Submission',
                 'App Store Optimization (ASO)',
-                'Comprehensive App Review Process',
-                'Beta Testing Setup',
-                'App Analytics Setup'
+                'Comprehensive App Review Process'
             ],
             benefits: [
                 'Reach a Global Audience',
@@ -94,9 +88,7 @@ const ServicesSection = () => {
             features: [
                 'App Store Optimization (ASO)',
                 'Social Media Advertising',
-                'Influencer Marketing Campaigns',
-                'Referral Programs',
-                'Push Notification Campaigns'
+                'Influencer Marketing Campaigns'
             ],
             benefits: [
                 'Increased App Visibility',
@@ -114,9 +106,7 @@ const ServicesSection = () => {
             features: [
                 'Targeted Ad Campaigns',
                 'Social Media Marketing',
-                'SEO and Content Marketing',
-                'PPC Campaigns (Pay-Per-Click)',
-                'Creative Ad Designs'
+                'SEO and Content Marketing'
             ],
             benefits: [
                 'Increased Brand Exposure',
@@ -134,9 +124,7 @@ const ServicesSection = () => {
             features: [
                 'Custom Landing Pages',
                 'Form Integrations with CRM',
-                'Email List Building',
-                'Lead Nurturing Campaigns',
-                'Social Media Advertising'
+                'Email List Building'
             ],
             benefits: [
                 'Higher Lead Conversion',
@@ -155,9 +143,7 @@ const ServicesSection = () => {
             features: [
                 'Functional Testing',
                 'Performance Testing',
-                'Security Testing',
-                'Usability Testing',
-                'Cross-Browser and Cross-Device Testing'
+                'Security Testing'
             ],
             benefits: [
                 'Bug-Free Launch',
@@ -176,9 +162,7 @@ const ServicesSection = () => {
             features: [
                 'Google Play Console Management',
                 'Apple Developer Console Support',
-                'App Analytics Setup and Optimization',
-                'App Version Control',
-                'Beta Testing Setup and Feedback Management'
+                'App Analytics Setup and Optimization'
             ],
             benefits: [
                 'Seamless App Management',
@@ -203,7 +187,7 @@ const ServicesSection = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     {offers.map((offer, index) => (
                         <div key={index} className="bg-[#090F1B] bg-opacity-90 backdrop-blur-lg rounded-xl p-4 shadow-lg hover:shadow-xl transition-all duration-300 transform border border-gray-700 overflow-hidden hover:border-blue-300 group relative">
-                            <div className="h-48 w-48 xl:w-52 xl:h-52 mb-6 mx-auto rounded-full border-[3px] border-gray-700 group-hover:border-blue-300 shadow-md overflow-hidden">
+                            <div className=" h-48 w-48 xl:w-52 xl:h-52 mb-6 mx-auto rounded-full border-[3px] border-gray-700 group-hover:border-blue-300 shadow-md overflow-hidden">
                                 <img src={offer.icon} alt={offer.title} className="w-full h-full object-cover" />
                             </div>
                             <h3 className="text-xl font-semibold text-white mb-2 text-center">{offer.title}</h3>
@@ -228,7 +212,7 @@ const ServicesSection = () => {
                 <div className="fixed inset-0 bg-black/80 z-50 flex justify-center items-center">
                     <div className="bg-[#1e2a3d] p-4 rounded-lg w-[95%] md:w-[90%] lg:w-[95%] transition-all transform scale-95 opacity-0 animate-modal-open">
                         <div className='flex flex-col md:flex-row items-center gap-6 h-full xl:h-[500px]'>
-                            <div className='w-full md:w-1/2 h-full flex items-center justify-center'>
+                            <div className='w-full md:w-1/2 h-full hidden md:flex items-center justify-center'>
                                 <img className='w-full h-[200px] md:h-full object-cover' src={modalContent.icon} alt={modalContent.title} />
                             </div>
                             <div className='w-full md:w-1/2'>
