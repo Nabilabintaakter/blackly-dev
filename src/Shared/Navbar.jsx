@@ -1,9 +1,10 @@
 import React from 'react';
-import Container from './Container';
+
 import { NavLink } from 'react-router-dom';
-import logo from '../../src/assets/logo-removebg-preview.png'
+import logo from '../../src/assets/logo2.png'
 import { BiSolidPhoneCall } from "react-icons/bi";
 import { TfiMenu } from "react-icons/tfi";
+import Container from './Container';
 const Navbar = () => {
     const links = <>
         <li>
@@ -50,12 +51,12 @@ const Navbar = () => {
         </li>
     </>
     return (
-        <div className='bg-black'>
+        <div className='fixed top-0 bg-black/10 backdrop-blur-md z-50 w-full'>
             <Container>
-                <div className="navbar">
+                <div className="navbar p-0">
                     <div className="navbar-start">
                         <div className="dropdown">
-                            <div tabIndex={0} role="button" className="lg:hidden">
+                            <div tabIndex={0} role="button" className="lg:hidden mr-2">
                                 <TfiMenu className='text-white text-xl md:text-2xl'/>
                             </div>
                             <ul
