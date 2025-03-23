@@ -267,16 +267,16 @@ const ServicesSection = () => {
                                     </div>
                                     <div className="flex gap-2 mt-4">
                             <button
-                                className="text-white bg-red-600 px-6 py-2 rounded-md flex items-center gap-2"
+                                className="text-white bg-red-600 p-2 sm:px-3 sm:py-1 lg:px-6 lg:py-2 rounded-full sm:rounded-md flex items-center gap-2"
                                 onClick={closeModal}
                             >
-                                <IoIosCloseCircle className='text-xl'/>Close
+                                <IoIosCloseCircle className='text-xl'/><p className='hidden sm:block'>Close</p>
                             </button>
                             <button
-                                className="text-white bg-green-600 px-6 py-2 rounded-md flex items-center gap-2"
+                                className="text-white bg-green-600 p-2 sm:px-3 sm:py-1 lg:px-6 lg:py-2 rounded-full sm:rounded-md flex items-center gap-2"
                                 onClick={() => window.open('https://wa.me/8801622559988', '_blank')}
                             >
-                                <RiWhatsappFill className='text-xl'/>Contact via WhatsApp
+                                <RiWhatsappFill className='text-xl'/><p className='hidden sm:block'>Contact via WhatsApp</p>
                             </button>
                         </div>
                                 </div>
