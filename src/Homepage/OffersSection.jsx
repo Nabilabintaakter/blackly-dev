@@ -12,8 +12,8 @@ const OffersSection = () => {
             <Container>
                 <div>
                     <div className="text-center mb-12 w-[95%] lg:w-[60%] mx-auto">
-                    <h2 className="text-4xl lg:text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-blue-400 to-blue-300 mb-5 w-[95%] drop-shadow-[0_0_10px_rgba(59,130,246,0.3)]">
-                    Unlock Exclusive Deals & Special Offers
+                        <h2 className="text-4xl lg:text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-blue-400 to-blue-300 mb-5 w-[95%] drop-shadow-[0_0_10px_rgba(59,130,246,0.3)]">
+                            Unlock Exclusive Deals & Special Offers
                         </h2>
                         <p className="text-gray-300 ">Unlock expert-driven services tailored for your success—whether it's building powerful apps, crafting dynamic websites, or executing strategic marketing campaigns, we deliver excellence in every aspect.</p>
                     </div>
