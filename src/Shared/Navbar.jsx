@@ -1,10 +1,8 @@
-import React from 'react';
-
 import { NavLink } from 'react-router-dom';
 import logo from '../../src/assets/logo2.png'
-import { BiSolidPhoneCall } from "react-icons/bi";
 import { TfiMenu } from "react-icons/tfi";
 import Container from './Container';
+import { FaPhoneAlt } from 'react-icons/fa';
 const Navbar = () => {
     const links = <>
         <li>
@@ -73,7 +71,10 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="navbar-end">
-                        <button className='btn btn-sm md:btn-md rounded-md border-none md:text-lg font-normal bg-white text-black'><BiSolidPhoneCall className='md:text-xl'></BiSolidPhoneCall>Contact Us </button>
+                    <button className="bg-white text-black font-semibold py-2 px-4 rounded-full flex items-center">
+                                <FaPhoneAlt className="mr-2" />
+                                Contact Us
+                            </button>
                     </div>
                 </div>
             </Container>

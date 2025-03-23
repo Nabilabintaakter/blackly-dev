@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../assets/logo2.png";
 import Container from "./Container";
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -88,19 +88,27 @@ const Footer = () => {
             <p className="text-gray-400 text-sm">Email: support@blackly.dev</p>
             <p className="text-gray-400 text-sm">Phone: +123 456 7890</p>
             <div className="flex justify-center md:justify-start space-x-4 mt-4">
+            <a
+      href="https://wa.me/8801622559988"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-white bg-green-500 p-3 rounded-full text-lg transition transform hover:scale-110 duration-500"
+    >
+      <FaWhatsapp />
+    </a>
               <a
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white bg-blue-600 p-3 rounded-full text-lg transition transform hover:scale-110"
+                className="text-white bg-blue-600 p-3 rounded-full text-lg transition transform hover:scale-110 duration-500"
               >
-                <FaFacebookF/>
+                <FaFacebookF />
               </a>
               <a
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white bg-blue-400 p-3 rounded-full text-lg transition transform hover:scale-110"
+                className="text-white bg-blue-400 p-3 rounded-full text-lg transition transform hover:scale-110 duration-500"
               >
                 <FaTwitter />
               </a>
@@ -108,7 +116,7 @@ const Footer = () => {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white bg-blue-700 p-3 rounded-full text-lg transition transform hover:scale-110"
+                className="text-white bg-blue-700 p-3 rounded-full text-lg transition transform hover:scale-110 duration-500"
               >
                 <FaLinkedinIn />
               </a>
@@ -116,7 +124,7 @@ const Footer = () => {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white bg-pink-600 p-3 rounded-full text-lg transition transform hover:scale-110"
+                className="text-white bg-pink-600 p-3 rounded-full text-lg transition transform hover:scale-110 duration-500"
               >
                 <FaInstagram />
               </a>

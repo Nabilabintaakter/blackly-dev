@@ -4,13 +4,16 @@ import Container from "../Shared/Container";
 
 const Banner = () => {
   return (
-    <div className="bg-gradient-to-r from-[#0d0d0d] to-[#1a1a1a] text-white">
+    <div className="bg-[#111722] relative">
+      <div className="absolute inset-0 bg-gradient-to-b from-[#000000] via-[#21304b] to-transparent opacity-60 z-0"></div>
       <Container>
-        <div className="flex flex-col md:flex-row items-center relative pb-12 pt-20 md:pb-20 md:pt-28 lg:pb-24 lg:pt-32">
+        <div className="flex flex-col md:flex-row items-center relative pb-12 pt-20 md:pb-20 md:pt-28 lg:pt-32">
           {/* Left Content */}
           <div className="w-full md:w-1/2 text-center md:text-left">
-            <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
-              Delivering Fast, Reliable and <span className="text-blue-800">Scalable Digital Solutions</span>
+            <h1 className="text-white text-4xl md:text-5xl font-bold leading-tight">
+              Delivering Fast, Reliable and <span className=" text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-blue-400 to-blue-300 mb-3 drop-shadow-[0_0_10px_rgba(59,130,246,0.3)] ">
+                Scalable Digital Solutions
+              </span>
             </h1>
             <p className="text-lg text-gray-300 mt-4">
               Handcrafted solutions to accelerate your business growth. From startups to enterprises, we deliver innovative, fast, and high-quality applications that bring your vision to life. Our affordable web and mobile services ensure fast delivery without compromising quality.
@@ -20,12 +23,12 @@ const Banner = () => {
                 Get Started ➜
               </button>
               <button className="px-6 py-3 border border-gray-500 text-gray-300 rounded-lg hover:border-white hover:text-white transition">
-                How It Work
+                How It Works
               </button>
             </div>
           </div>
 
-          {/* Right Side Images with z-index effect */}
+          {/* Right Side Images with overlay and z-index effect */}
           <div className="hidden md:flex md:w-1/2 justify-center relative">
             <img
               src={image1}
