@@ -41,9 +41,7 @@ const ServicesSection = () => {
             benefits: [
                 'Improved Online Presence',
                 'Increased Customer Engagement',
-                'Mobile-Friendly Designs',
-                'Enhanced User Experience',
-                'Scalability and Flexibility'
+                'Mobile-Friendly Designs'
             ],
             pricing: 'Starting at $1500 for a basic website, pricing depends on complexity and features.',
             serviceDuration: '4 to 8 weeks based on project requirements.'
@@ -63,9 +61,7 @@ const ServicesSection = () => {
             benefits: [
                 'Improved Customer Engagement',
                 'Better Brand Recognition',
-                'Access to Mobile-First Users',
-                'Boosted Productivity',
-                'Monetization Opportunities'
+                'Access to Mobile-First Users'
             ],
             pricing: 'Starting at $2500 for a basic mobile app, pricing varies based on features and platforms.',
             serviceDuration: '6 to 12 weeks depending on the app complexity.'
@@ -85,9 +81,7 @@ const ServicesSection = () => {
             benefits: [
                 'Reach a Global Audience',
                 'Increase App Downloads',
-                'Maximized App Visibility',
-                'Easy Updates and Maintenance',
-                'Better Monetization Options'
+                'Maximized App Visibility'
             ],
             pricing: 'Starts at $500 per platform for submission and setup.',
             serviceDuration: '1 to 2 weeks for submission and setup.'
@@ -107,9 +101,7 @@ const ServicesSection = () => {
             benefits: [
                 'Increased App Visibility',
                 'Higher User Acquisition Rates',
-                'Better User Retention',
-                'Engagement-Boosting Strategies',
-                'Brand Awareness Boost'
+                'Better User Retention'
             ],
             pricing: 'Starting at $1000 for a basic promotion campaign, pricing may vary based on platforms and services.',
             serviceDuration: 'Campaigns typically run for 3 to 6 weeks.'
@@ -129,9 +121,7 @@ const ServicesSection = () => {
             benefits: [
                 'Increased Brand Exposure',
                 'Targeted Audience Reach',
-                'Higher Conversion Rates',
-                'Cost-Effective Advertising',
-                'Measurable Campaign Results'
+                'Higher Conversion Rates'
             ],
             pricing: 'Pricing depends on the platforms and duration, starting at $500 for a basic campaign.',
             serviceDuration: 'Campaigns typically last 4 to 8 weeks.'
@@ -152,8 +142,7 @@ const ServicesSection = () => {
                 'Higher Lead Conversion',
                 'Improved Sales Opportunities',
                 'Effective Customer Data Collection',
-                'Cost-Efficient Lead Generation',
-                'Scalable Campaigns'
+
             ],
             pricing: 'Starting at $750 for a basic lead generation campaign.',
             serviceDuration: 'Lead generation campaigns typically last 2 to 4 weeks.'
@@ -174,8 +163,7 @@ const ServicesSection = () => {
                 'Bug-Free Launch',
                 'Improved User Experience',
                 'Faster Time-to-Market',
-                'Better Security',
-                'Higher Customer Satisfaction'
+
             ],
             pricing: 'Starting at $1000 depending on the size and complexity of the project.',
             serviceDuration: '1 to 4 weeks depending on the project scope.'
@@ -196,8 +184,6 @@ const ServicesSection = () => {
                 'Seamless App Management',
                 'Better App Performance Insights',
                 'Increased App Visibility',
-                'Timely Updates and Fixes',
-                'Simplified App Submission'
             ],
             pricing: 'Starts at $300 for basic management and support.',
             serviceDuration: 'Ongoing service with monthly plans available.'
