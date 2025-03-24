@@ -21,7 +21,7 @@ const Banner = () => {
               </h3>
             </div>
             <h1 className="w-[96%] text-white text-4xl lg:text-5xl font-bold leading-tight">
-              Empowering Your Vision with Cutting-Edge{" "}
+              Empowering Your Vision with Cutting-Edge{" "} <br className="block sm:hidden"/>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-blue-400 to-blue-300 mb-3 drop-shadow-[0_0_10px_rgba(59,130,246,0.3)]">
                 <Typewriter
                  words={['Solutions', 'Innovation', 'Technology']} 
@@ -51,7 +51,7 @@ const Banner = () => {
             </div>
           </div>
 
-          {/* Right Side Images with overlay and z-index effect */}
+          {/* Right Side */}
           <div className="hidden md:flex md:w-1/2 justify-center relative">
             <img
               src={image1}
