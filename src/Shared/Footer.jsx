@@ -130,7 +130,7 @@ const Footer = () => {
                 <img src={logoText} alt="" />
               </div>
             </div>
-            <p className="text-gray-400 mt-4">
+            <p className="text-gray-400 mt-4 w-[80%]">
               Delivering premium app development, web solutions, and digital marketing expertise.
             </p>
           </div>
@@ -205,16 +205,16 @@ const Footer = () => {
               <div className="fixed inset-0 bg-black/80 z-50 flex justify-center items-center" onClick={closeModal}>
                 <div className="bg-[#1e2a3d] p-4 rounded-lg w-[95%] md:w-[90%] lg:w-[95%] transition-all transform scale-95 opacity-0 animate-modal-open" onClick={(e) => e.stopPropagation()}>
                   <div className='flex flex-col md:flex-row items-center gap-6 h-full xl:h-[500px]'>
-                    <div className='w-full md:w-1/2 h-full hidden md:flex items-center justify-center'>
+                    <div className='w-full md:w-1/2 h-full hidden md:flex items-center'>
                       <img className='w-full h-[200px] md:h-full object-cover' src={modalContent.icon} alt={modalContent.title} />
                     </div>
                     <div className='w-full md:w-1/2'>
-                      <h2 className="text-2xl font-semibold text-blue-400 mb-2">{modalContent.title}</h2>
+                      <h2 className="text-2xl font-semibold text-blue-400 mb-2 text-left">{modalContent.title}</h2>
                       <div className='bg-[#313e67] rounded-full w-fit mb-4 px-4 py-[2px] text-xs md:text-sm border-[1px] border-[#7086cf]'>
                         <p className="text-gray-100 mb-1">{modalContent.description}</p>
                       </div>
 
-                      <p className='text-sm text-gray-300 mb-2'>
+                      <p className='text-sm text-gray-300 mb-2 text-left'>
                         {modalContent.detailedDescription}
                       </p>
 
@@ -251,22 +251,22 @@ const Footer = () => {
                         <div className="space-y-2">
                           <div>
                             <h4 className="font-semibold text-lg text-blue-400 flex items-center gap-2"><IoMdPricetags />Pricing:</h4>
-                            <p className="text-sm text-green-400">{modalContent.pricing}</p>
+                            <p className="text-sm text-green-400 text-left">{modalContent.pricing}</p>
                           </div>
                           <div>
                             <h4 className="font-semibold text-lg text-blue-400 flex items-center gap-2"><IoIosTime />Service Duration:</h4>
-                            <p className="text-sm text-gray-300">{modalContent.serviceDuration}</p>
+                            <p className="text-sm text-gray-300 text-left">{modalContent.serviceDuration}</p>
                           </div>
                         </div>
                         <div className="flex gap-2 mt-4">
                           <button
-                            className="text-white bg-red-600 p-2 sm:px-3 sm:py-1 lg:px-6 lg:py-2 rounded-full sm:rounded-md flex items-center gap-2"
+                            className="text-white bg-red-600 hover:bg-red-700 transition-all duration-300  p-2 sm:px-3 sm:py-1 lg:px-6 lg:py-2 rounded-full sm:rounded-md flex items-center gap-2 cursor-pointer"
                             onClick={closeModal}
                           >
                             <IoIosCloseCircle className='text-2xl md:text-xl' /><p className='hidden sm:block'>Close</p>
                           </button>
                           <button
-                            className="text-white bg-green-600 p-2 sm:px-3 sm:py-1 lg:px-6 lg:py-2 rounded-full sm:rounded-md flex items-center gap-2"
+                            className="text-white bg-green-600 hover:bg-green-700 transition-all duration-300  p-2 sm:px-3 sm:py-1 lg:px-6 lg:py-2 rounded-full sm:rounded-md flex items-center gap-2 cursor-pointer"
                             onClick={() => window.open('https://wa.me/8801622559988', '_blank')}
                           >
                             <RiWhatsappFill className='text-2xl md:text-xl' /><p className='hidden sm:block'>Contact via WhatsApp</p>

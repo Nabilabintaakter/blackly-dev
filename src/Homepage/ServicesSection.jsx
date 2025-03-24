@@ -12,6 +12,7 @@ import consoleImage from '../assets/console.png';
 import { MdFeaturedPlayList } from "react-icons/md";
 import { IoIosCloseCircle, IoIosTime, IoMdPricetags } from "react-icons/io";
 import { RiWhatsappFill } from "react-icons/ri";
+import { Fade } from 'react-awesome-reveal';
 
 const ServicesSection = () => {
     const [modalContent, setModalContent] = useState(null);
@@ -186,24 +187,26 @@ const ServicesSection = () => {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     {offers.map((offer, index) => (
-                        <div key={index} className="bg-[#090F1B] bg-opacity-90 backdrop-blur-lg rounded-xl p-4 shadow-lg hover:shadow-xl transition-all duration-300 transform border border-gray-700 overflow-hidden hover:border-blue-300 group relative">
-                            <div className=" h-48 w-48 xl:w-52 xl:h-52 mb-6 mx-auto rounded-full border-[3px] border-gray-700 group-hover:border-blue-300 shadow-md overflow-hidden">
-                                <img src={offer.icon} alt={offer.title} className="w-full h-full object-cover" />
+                        <Fade direction='up' key={index} triggerOnce delay={index*200}>
+                            <div  className="bg-[#090F1B] bg-opacity-90 backdrop-blur-lg rounded-xl p-4 shadow-lg hover:shadow-xl transition-all duration-300 transform border border-gray-700 overflow-hidden hover:border-blue-300 group relative">
+                                <div className=" h-48 w-48 xl:w-52 xl:h-52 mb-6 mx-auto rounded-full border-[3px] border-gray-700 group-hover:border-blue-300 shadow-md overflow-hidden">
+                                    <img src={offer.icon} alt={offer.title} className="w-full h-full object-cover" />
+                                </div>
+                                <h3 className="text-xl font-semibold text-white mb-2 text-center">{offer.title}</h3>
+                                <p className="text-gray-300 mb-16 text-center text-sm">{offer.description}</p>
+                                <div className="flex gap-2 absolute bottom-4 left-1/2 transform -translate-x-1/2">
+                                    <button
+                                        className="flex justify-center items-center gap-2 text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 lg:px-2 lg:py-1 xl:px-4 xl:py-2 rounded-full transition-all shadow-md w-1/2 text-sm xl:text-base"
+                                        onClick={() => openModal(offer)}
+                                    >
+                                        Details <FaArrowRight />
+                                    </button>
+                                    <button className="flex justify-center items-center gap-2 text-white bg-green-600 hover:bg-green-700 lg:px-2 lg:py-1 px-4 py-2 xl:px-4 xl:py-2 rounded-full transition-all shadow-md w-1/2 text-sm xl:text-base cursor-pointer" onClick={() => window.open('https://wa.me/8801622559988', '_blank')}>
+                                        <FaPhoneAlt /> Contact
+                                    </button>
+                                </div>
                             </div>
-                            <h3 className="text-xl font-semibold text-white mb-2 text-center">{offer.title}</h3>
-                            <p className="text-gray-300 mb-16 text-center text-sm">{offer.description}</p>
-                            <div className="flex gap-2 absolute bottom-4 left-1/2 transform -translate-x-1/2">
-                                <button
-                                    className="flex justify-center items-center gap-2 text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 lg:px-2 lg:py-1 xl:px-4 xl:py-2 rounded-full transition-all shadow-md w-1/2 text-sm xl:text-base"
-                                    onClick={() => openModal(offer)}
-                                >
-                                    Details <FaArrowRight />
-                                </button>
-                                <button className="flex justify-center items-center gap-2 text-white bg-green-600 hover:bg-green-700 lg:px-2 lg:py-1 px-4 py-2 xl:px-4 xl:py-2 rounded-full transition-all shadow-md w-1/2 text-sm xl:text-base cursor-pointer" onClick={() => window.open('https://wa.me/8801622559988', '_blank')}>
-                                    <FaPhoneAlt /> Contact
-                                </button>
-                            </div>
-                        </div>
+                        </Fade>
                     ))}
                 </div>
             </Container>
@@ -266,19 +269,19 @@ const ServicesSection = () => {
                                         </div>
                                     </div>
                                     <div className="flex gap-2 mt-4">
-                            <button
-                                className="text-white bg-red-600 p-2 sm:px-3 sm:py-1 lg:px-6 lg:py-2 rounded-full sm:rounded-md flex items-center gap-2"
-                                onClick={closeModal}
-                            >
-                                <IoIosCloseCircle className='text-2xl md:text-xl'/><p className='hidden sm:block'>Close</p>
-                            </button>
-                            <button
-                                className="text-white bg-green-600 p-2 sm:px-3 sm:py-1 lg:px-6 lg:py-2 rounded-full sm:rounded-md flex items-center gap-2"
-                                onClick={() => window.open('https://wa.me/8801622559988', '_blank')}
-                            >
-                                <RiWhatsappFill className='text-2xl md:text-xl'/><p className='hidden sm:block'>Contact via WhatsApp</p>
-                            </button>
-                        </div>
+                                        <button
+                                            className="text-white bg-red-600 hover:bg-red-700 transition-all duration-300 p-2 sm:px-3 sm:py-1 lg:px-6 lg:py-2 rounded-full sm:rounded-md flex items-center gap-2 cursor-pointer"
+                                            onClick={closeModal}
+                                        >
+                                            <IoIosCloseCircle className='text-2xl md:text-xl' /><p className='hidden sm:block'>Close</p>
+                                        </button>
+                                        <button
+                                            className="text-white bg-green-600 hover:bg-green-700 transition-all duration-300  p-2 sm:px-3 sm:py-1 lg:px-6 lg:py-2 rounded-full sm:rounded-md flex items-center gap-2 cursor-pointer"
+                                            onClick={() => window.open('https://wa.me/8801622559988', '_blank')}
+                                        >
+                                            <RiWhatsappFill className='text-2xl md:text-xl' /><p className='hidden sm:block'>Contact via WhatsApp</p>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
