@@ -209,15 +209,15 @@ const ServicesSection = () => {
             </Container>
 
             {modalContent && (
-                <div className="fixed inset-0 bg-black/80 z-50 flex justify-center items-center">
-                    <div className="bg-[#1e2a3d] p-4 rounded-lg w-[95%] md:w-[90%] lg:w-[95%] transition-all transform scale-95 opacity-0 animate-modal-open">
+                <div className="fixed inset-0 bg-black/80 z-50 flex justify-center items-center" onClick={closeModal}>
+                    <div className="bg-[#1e2a3d] p-4 rounded-lg w-[95%] md:w-[90%] lg:w-[95%] transition-all transform scale-95 opacity-0 animate-modal-open" onClick={(e) => e.stopPropagation()}>
                         <div className='flex flex-col md:flex-row items-center gap-6 h-full xl:h-[500px]'>
                             <div className='w-full md:w-1/2 h-full hidden md:flex items-center justify-center'>
                                 <img className='w-full h-[200px] md:h-full object-cover' src={modalContent.icon} alt={modalContent.title} />
                             </div>
                             <div className='w-full md:w-1/2'>
                                 <h2 className="text-2xl font-semibold text-blue-400 mb-2">{modalContent.title}</h2>
-                                <div className='bg-[#313e67] rounded-full w-fit mb-4 px-4 py-[2px] text-sm border-[1px] border-[#7086cf]'>
+                                <div className='bg-[#313e67] rounded-full w-fit mb-4 px-4 py-[2px] text-xs md:text-sm border-[1px] border-[#7086cf]'>
                                     <p className="text-gray-100 mb-1">{modalContent.description}</p>
                                 </div>
 
@@ -270,13 +270,13 @@ const ServicesSection = () => {
                                 className="text-white bg-red-600 p-2 sm:px-3 sm:py-1 lg:px-6 lg:py-2 rounded-full sm:rounded-md flex items-center gap-2"
                                 onClick={closeModal}
                             >
-                                <IoIosCloseCircle className='text-xl'/><p className='hidden sm:block'>Close</p>
+                                <IoIosCloseCircle className='text-2xl md:text-xl'/><p className='hidden sm:block'>Close</p>
                             </button>
                             <button
                                 className="text-white bg-green-600 p-2 sm:px-3 sm:py-1 lg:px-6 lg:py-2 rounded-full sm:rounded-md flex items-center gap-2"
                                 onClick={() => window.open('https://wa.me/8801622559988', '_blank')}
                             >
-                                <RiWhatsappFill className='text-xl'/><p className='hidden sm:block'>Contact via WhatsApp</p>
+                                <RiWhatsappFill className='text-2xl md:text-xl'/><p className='hidden sm:block'>Contact via WhatsApp</p>
                             </button>
                         </div>
                                 </div>
